@@ -1,0 +1,49 @@
+.card {
+  box-shadow: 0 4px 8px 0 #00000033;
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 5px;
+  margin: 10px 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #00000033;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-bottom: 2px solid #f00f2d;
+}
+
+.imgCardContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
+  .navTitleText {
+    order: 1;
+  }
+  .navSelectImgNo {
+    order: 2;
+  }
+  .imgCardContainer {
+    flex-flow: column wrap;
+  }
+  .card {
+    width: 100%;
+  }
+}
