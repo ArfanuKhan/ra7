@@ -28,8 +28,7 @@ function App() {
       <NavBar selectedImgNo={imgNo} setImgNo={setNumberOfImages}/>
       <div className="imgCardContainer">
         {cards.map((card, i) =>{
-          const uri = "https://picsum.photos/"+i+"//500";
-          return (<ImageCard imgUrl={uri} imgNo={card.imgNo} key={i}/>)
+          return (<ImageCard imgURL={card.url} imgNo={card.imgNo} key={i}/>)
         })}
       </div>
       

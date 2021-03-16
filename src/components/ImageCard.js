@@ -6,7 +6,7 @@ const ImageCard = (props) => {
     <div className="card">
       <img src={props.imgURL + ''} alt="Picsum Ig" />
       <div className="container">
-        <h5>Image {props.imgNumber}</h5>
+        <h5>Image {props.imgNo}</h5>
       </div>
     </div>
   );
