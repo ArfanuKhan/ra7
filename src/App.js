@@ -8,7 +8,7 @@ function App() {
 
   const [imgNo, setImgNo] = useState(1);
 
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState([{url: `https://picsum.photos/id/11/500`, imgNo: 1}]);
 
   const changeNumberOfCards = (numberOfImages) => {
     const tempCards = [];
