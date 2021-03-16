@@ -13,7 +13,7 @@ function App() {
   const changeNumberOfCards = (numberOfImages) => {
     const tempCards = [];
     for(let i = 1; i <= numberOfImages; i++){
-      tempCards.push({url: `https://picsum.photos/id/${i}/500`, imgNo: i});
+      tempCards.push({url: `https://picsum.photos/id/${i+10}/500`, imgNo: i});
     }
     setCards(tempCards);
   }
